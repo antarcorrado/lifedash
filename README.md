@@ -11,6 +11,12 @@ December. Each area of your life is a project, each thing to do is a task, and
 the app always shows you the next step, so the day feels like a list of small
 wins instead of a pile of worries.
 
+**Built to work with AI agents.** Claude Code, Codex, Cursor and other agents
+can read your projects, add tasks and tick them off through the `lifedash`
+command, which the app installs together with the instructions the agents need.
+No heavy integration to set up: it is a small command with compact output, so
+an agent spends very few tokens to use it.
+
 It is a native Mac app and a web app for your phone, in English and Italian,
 kept in sync and encrypted end to end: your data stays yours.
 
@@ -35,8 +41,11 @@ kept in sync and encrypted end to end: your data stays yours.
 1. **Projects** are the areas of your life (Home, Health, a trip, a client).
    Each one has a status: *Today* (active now), *Planned*, *Paused* or
    *Done*.
-2. **Tasks** live inside projects and can contain sub-tasks, as deep as you
-   need. A task can be *to do*, *in progress*, *blocked* (with a note on why)
+2. **Tasks** live inside projects, and every task can hold its own
+   sub-tasks, which can hold theirs, with no limit: a page of a website, the
+   sections of that page, the pieces of each section. Shape every project the
+   way it really is, from a two-step errand to a client job with dozens of
+   parts. A task can be *to do*, *in progress*, *blocked* (with a note on why)
    or *done*, and can be marked *urgent*.
 3. **Next task.** The card at the top shows the one thing to do now: the
    first open task of your first active project, starting with what is
@@ -86,6 +95,8 @@ only in the browser, on any computer.
 
 - **Add**: the round **+** button creates a project or a task. Inside a
   project, the **+** on a row adds a sub-task.
+- **Swipe** (phone and tablet): swipe a row to the right to edit it, to the
+  left to add a sub-task or a task inside it.
 - **Edit**: click (or tap) a row, or the pencil, to open the editor: title,
   description, status, priority, due date, reminders, attachments.
 - **Tick**: the check mark completes a task. Completed tasks fold away under
@@ -93,13 +104,16 @@ only in the browser, on any computer.
 - **Lists become sub-tasks**: write a description as a list (`- Milk`,
   `- Bread`) and each line becomes a sub-task you can tick on its own.
 - **Attachments**: add photos, PDFs and documents (up to 10 MB each) to any
-  project or task: the receipt, the warranty, the appointment letter.
+  project or task: the client's brief, a reference photo, the quote. PDFs and
+  images show a preview right under the description.
 - **Fold and focus**: every project and task with sub-tasks is an accordion.
   Open only what you are working on; the app remembers.
 - **Duplicate** a project or task to reuse it (the monthly shopping, a
   recurring check-up).
 - **Compact mode** (Mac, *View › Compact Mode*): one slim bar on the
   edge of the screen with just the next task and its check mark.
+
+<p align="center"><img src="docs/img/mac-new-project.png" width="560" alt="Creating a new project on the Mac"></p>
 
 ## Money: the Finance view
 
