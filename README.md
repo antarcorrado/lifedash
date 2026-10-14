@@ -1,33 +1,34 @@
 <p align="center"><img src="docs/img/icon.png" width="128" alt="LifeDash icon"></p>
 
-# LIFEDASH
+<h1 align="center">LIFEDASH</h1>
 
 <p align="center"><b><a href="https://github.com/antarcorrado/lifedash/releases/latest/download/LifeDash.zip">Download for Mac</a></b> · <b><a href="https://www.antarcorrado.com/lifedash/">Open the web app</a></b><br>macOS 13 or later · Apple Silicon and Intel · free</p>
 
-**LifeDash is one calm place for everything you have to do.** The boiler that
-needs servicing, the bill due on Friday, the dentist, the trip in December, the
-client project that pays the rent: each area of your life is a project, each
-thing to do is a task, and the app always shows you what comes next.
+**Start from your work, and give the rest of your day the same care.** LifeDash
+puts the client project, the video you are editing and the invoice to send
+next to the swim before work, the shelf you want to put up and the trip in
+December. Each area of your life is a project, each thing to do is a task, and
+the app always shows you the next step, so the day feels like a list of small
+wins instead of a pile of worries.
 
 It is a native Mac app and a web app for your phone, in English and Italian,
 kept in sync and encrypted end to end: your data stays yours.
 
-<p align="center"><img src="docs/img/web-list.png" width="720" alt="The list: next task at the top, projects grouped by status"></p>
+<p align="center"><img src="docs/img/mac-list.png" width="560" alt="LifeDash on the Mac: the next task at the top, projects grouped by status"></p>
 
 ## What it is for
 
-LifeDash is made for the everyday: the small and large things that otherwise
-live in your head, in sticky notes and in a dozen apps.
-
-- **Home**: repairs, shopping lists, things to buy, appointments with the
-  plumber.
-- **Health**: check-ups, prescriptions, training habits.
-- **Money and paperwork**: bills with a due date, tax documents, insurance
-  renewals. A Finance view adds up what you are owed and what you have been
-  paid.
-- **Plans**: trips, events, courses, the guitar you keep meaning to learn.
-- **Work**: freelance jobs with fees, invoices and instalments, next to the
-  rest of your life instead of in a separate tool.
+- **Work first**: client projects and freelance jobs, with their tasks,
+  deadlines, fees, invoices and instalments. Tick things off as you go and
+  watch the project move forward.
+- **Your own projects**: the portfolio to refresh, the course you are taking,
+  the side project you finally want to ship.
+- **Sport and health**: the pool three times a week, the run on Sunday, a
+  goal to reach and the habits that get you there.
+- **Home and plans**: the shelf to put up, herbs for the balcony, flights and
+  a hotel for the next trip.
+- **The few things with a date**: renewing a pass or sending an invoice gets a
+  due date and a gentle reminder, so nothing slips and nothing nags.
 
 ## How it works, in one minute
 
@@ -79,7 +80,7 @@ English everywhere else.
 You can also create the account directly from the web app and use LifeDash
 only in the browser, on any computer.
 
-<p align="center"><img src="docs/img/phone-list.png" width="300" alt="LifeDash on a phone"></p>
+<p align="center"><img src="docs/img/web-phone.png" width="300" alt="The LifeDash web app on an iPhone"></p>
 
 ## Everyday use
 
@@ -100,17 +101,15 @@ only in the browser, on any computer.
 - **Compact mode** (Mac, *View › Compact Mode*): one slim bar on the
   edge of the screen with just the next task and its check mark.
 
-<p align="center"><img src="docs/img/web-editor.png" width="720" alt="The project editor"></p>
-
 ## Money: the Finance view
 
-Press the **€** button to see only the projects that involve money. For each
+Your work pays: press the **€** button to see only the projects that involve money. For each
 one you can set an amount, whether it has been paid and when, whether an
 invoice was issued, and split a payment into instalments. At the top you see
 what you are owed, what you have received and the total, by month and by
 year, by status and by category.
 
-<p align="center"><img src="docs/img/web-finance.png" width="720" alt="The Finance view"></p>
+<p align="center"><img src="docs/img/mac-finance.png" width="560" alt="The Finance view on the Mac"></p>
 
 ## Your data, your privacy
 
@@ -167,16 +166,30 @@ see every token in the Account panel and revoke it at any time.
 ```bash
 lifedash projects                                  # open projects
 lifedash tasks --open --sort due                   # what is still to do, by due date
-lifedash tasks --overdue                           # what is late
-lifedash task add --project home --title "Call the plumber" --due 2026-11-03
-lifedash task done task-1a2b3c4d                   # tick a task off
+lifedash task add --project green-studio --title "Send the mockups" --due 2026-11-03
+lifedash task start task-1a2b3c4d                  # in progress
+lifedash task done task-1a2b3c4d                   # tick it off
 lifedash --help                                    # every command and option
 ```
 
-To let an AI agent use it, tell it the command exists, for example:
+Messages are in English, or in Italian when your system language is Italian.
 
-> Use the `lifedash` command to add a task to my Home project for every repair
-> you find in this list.
+**AI agents learn it by themselves.** The app also installs a *skill*, the
+instructions an agent reads to use the command well, in the skill folders of
+the agents you have: Claude Code and the Claude app (`~/.claude/skills`),
+Codex, Cursor, Gemini CLI, GitHub Copilot and OpenCode. Then just ask:
+
+> Add a task to my Green Studio project for every change in this email, and
+> mark the hero video as done.
+
+The skill and the command are links into the app, so they update with it.
+
+## Updates
+
+LifeDash checks for a new version every time it opens, downloads it in the
+background and installs it when you quit. When an update is ready, the
+*LifeDash* menu offers **Restart to Update**; **Check for Updates…** looks
+right away.
 
 ## Requirements
 
