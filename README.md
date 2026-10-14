@@ -9,15 +9,10 @@ needs servicing, the bill due on Friday, the dentist, the trip in December, the
 client project that pays the rent: each area of your life is a project, each
 thing to do is a task, and the app always shows you what comes next.
 
-It is a native Mac app and a web app for your phone, kept in sync and
-encrypted end to end. Your data is a single readable file on your Mac, and it
-stays yours.
+It is a native Mac app and a web app for your phone, in English and Italian,
+kept in sync and encrypted end to end: your data stays yours.
 
 <p align="center"><img src="docs/img/web-list.png" width="720" alt="The list: next task at the top, projects grouped by status"></p>
-
-> **Language.** The interface is in Italian for now; your own projects and tasks
-> can be written in any language, as in the screenshots. An English interface is
-> planned.
 
 ## What it is for
 
@@ -37,8 +32,8 @@ live in your head, in sticky notes and in a dozen apps.
 ## How it works, in one minute
 
 1. **Projects** are the areas of your life (Home, Health, a trip, a client).
-   Each one has a status: *Oggi* (today, active now), *Futuri* (planned),
-   *In pausa* (paused) or *Completati* (done).
+   Each one has a status: *Today* (active now), *Planned*, *Paused* or
+   *Done*.
 2. **Tasks** live inside projects and can contain sub-tasks, as deep as you
    need. A task can be *to do*, *in progress*, *blocked* (with a note on why)
    or *done*, and can be marked *urgent*.
@@ -62,11 +57,10 @@ live in your head, in sticky notes and in a dozen apps.
 2. Open LifeDash. The app is signed and notarised by Apple, so it opens
    without warnings.
 3. Press **+** to create your first project, then add tasks to it. That's it:
-   LifeDash works fully offline, without an account.
+   LifeDash works on the Mac even without an account.
 
-Your data is saved in `~/Library/Application Support/LifeDash/tasks.json`.
-From **File › Scegli cartella dei dati…** (choose data folder) you can move it anywhere, for example into
-iCloud Drive or Dropbox.
+The interface follows the language of your Mac: Italian on an Italian system,
+English everywhere else.
 
 ### On your phone (and any browser)
 
@@ -79,6 +73,8 @@ iCloud Drive or Dropbox.
 3. On the phone, open **[antarcorrado.com/lifedash](https://www.antarcorrado.com/lifedash/)**,
    sign in, and add it to the Home Screen (Safari: Share › Add to Home Screen).
    It then opens like an app, works offline, and can send notifications.
+   The web app follows your browser's language; you can change it in
+   **Account › Language**.
 
 You can also create the account directly from the web app and use LifeDash
 only in the browser, on any computer.
@@ -92,7 +88,7 @@ only in the browser, on any computer.
 - **Edit**: click (or tap) a row, or the pencil, to open the editor: title,
   description, status, priority, due date, reminders, attachments.
 - **Tick**: the check mark completes a task. Completed tasks fold away under
-  *Completati*, with the date they were closed.
+  *Done*, with the date they were closed.
 - **Lists become sub-tasks**: write a description as a list (`- Milk`,
   `- Bread`) and each line becomes a sub-task you can tick on its own.
 - **Attachments**: add photos, PDFs and documents (up to 10 MB each) to any
@@ -101,7 +97,7 @@ only in the browser, on any computer.
   Open only what you are working on; the app remembers.
 - **Duplicate** a project or task to reuse it (the monthly shopping, a
   recurring check-up).
-- **Compact mode** (Mac, *Vista › Modalità compatta*): one slim bar on the
+- **Compact mode** (Mac, *View › Compact Mode*): one slim bar on the
   edge of the screen with just the next task and its check mark.
 
 <p align="center"><img src="docs/img/web-editor.png" width="720" alt="The project editor"></p>
@@ -118,27 +114,69 @@ year, by status and by category.
 
 ## Your data, your privacy
 
-- **One readable file.** On the Mac everything is in `tasks.json`, plain JSON
-  you can open, back up, version or edit by hand.
-- **End-to-end encryption.** With an account, your Mac and your browser
-  encrypt everything (AES-256-GCM) *before* sending it. The server stores only
-  unreadable blobs: it cannot see your projects, tasks or attachments.
+- **End-to-end encryption.** Your Mac and your browser encrypt everything
+  (AES-256-GCM) *before* sending it. The server keeps your data, so it is
+  there on every device, but only as unreadable blobs: it cannot see your
+  projects, tasks or attachments.
 - **Two-factor sign-in.** Every new device needs your password and a code from
   your authenticator app.
-- **Download everything.** In the web app, **Account › I tuoi dati › Scarica
-  tutti i dati** gives you a zip with your `tasks.json` and all attachments,
-  decrypted on your device.
-- **Delete your account.** **Account › Cancella l'account** removes your
-  account and every piece of your data from the server, for good. The file on
-  your Mac is not touched.
+- **Download everything.** In the web app, **Account › Your data › Download
+  all data** gives you a zip with all your projects and tasks (`tasks.json`)
+  and every attachment, decrypted on your device.
+- **Delete your account.** **Account › Delete account** removes your account
+  and every piece of your data from the server, for good.
 - **No tracking.** No analytics, no ads, no third-party scripts.
 
-## For automation and AI agents
+## Use it from the command line and AI agents
 
-From **Account › Token per script e agenti** in the web app you can create a
-token (read-only or read-write) that lets a script or an AI agent read and
-update your projects and tasks, for example to add a task when a job is done.
-Tokens can be revoked at any time, and they never reveal your password.
+The `lifedash` command reads and changes your projects and tasks from the
+Terminal, so a script or an AI agent (Claude Code, Codex and others) can add a
+task when a job is done, list what is due this week, or tick something off.
+It ships inside the Mac app, which installs it the first time you open it,
+and it needs [Node.js](https://nodejs.org) 18 or later.
+
+**1. Check that it is there:**
+
+```bash
+lifedash --help
+```
+
+The app links the command into the first folder it can write among
+`/opt/homebrew/bin`, `/usr/local/bin` and `~/.local/bin`. If your Terminal
+answers *command not found*, that folder is not in your `PATH`: add it, or
+call the command by its full path,
+`/Applications/LifeDash.app/Contents/Resources/cli/lifedash.mjs`.
+
+**2. Give it a token.** A script cannot type your password and a 6-digit code,
+so the command signs in with a token instead. In the web app open **Account ›
+Tokens for scripts and agents** (on the Mac: **Account › Tokens for scripts
+and agents › New token…**), give it a name and choose *read only* if the agent
+should only look. Copy the token, then:
+
+```bash
+lifedash login        # paste the token and press Enter
+lifedash whoami       # checks that it works
+```
+
+The token stays in `~/.config/lifedash/credentials.json`, readable only by
+you. It opens your data without your password, so treat it like one: you can
+see every token in the Account panel and revoke it at any time.
+
+**3. Use it:**
+
+```bash
+lifedash projects                                  # open projects
+lifedash tasks --open --sort due                   # what is still to do, by due date
+lifedash tasks --overdue                           # what is late
+lifedash task add --project home --title "Call the plumber" --due 2026-11-03
+lifedash task done task-1a2b3c4d                   # tick a task off
+lifedash --help                                    # every command and option
+```
+
+To let an AI agent use it, tell it the command exists, for example:
+
+> Use the `lifedash` command to add a task to my Home project for every repair
+> you find in this list.
 
 ## Requirements
 

@@ -16,10 +16,10 @@ related files, together "the Software") is free of charge.
    Software, except where the law expressly allows it despite this
    limitation.
 
-4. Your data. Everything you write in LifeDash belongs to you. The Software
-   keeps it in a plain file on your Mac (tasks.json) and, if you create an
-   account, on the server encrypted end to end. You can download all of it
-   (Account > Your data) and delete your account at any time.
+4. Your data. Everything you write in LifeDash belongs to you. With an
+   account it is kept on the server encrypted end to end, so that nobody but
+   you can read it. You can download all of it (Account > Your data) and
+   delete your account at any time.
 
 5. No warranty. The Software is provided "as is", without warranty of any
    kind, express or implied, including fitness for a particular purpose. Keep
