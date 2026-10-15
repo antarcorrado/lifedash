@@ -121,10 +121,13 @@ icon brings it back.
 
 **Compact mode** (Mac, *View › Compact Mode*) takes this one step further:
 the window folds into a slim bar at the edge of the screen with only the next
-task and its check mark. It can stay on top of your other windows while you
-work, so the next step is always in sight and nothing else is. Tick the task
-and the bar shows the following one; double-click the bar to go back to the
+task, the task it belongs to and its project. It can stay on top of your other
+windows while you work, so the next step is always in sight and nothing else
+is. Move the pointer over the bar and the check mark appears: tick the task
+and the bar shows the following one. Double-click the bar to go back to the
 full dashboard.
+
+<p align="center"><img src="docs/img/mac-compact.png" width="620" alt="Compact mode: a slim bar with the next task"></p>
 
 ## Everyday use
 
