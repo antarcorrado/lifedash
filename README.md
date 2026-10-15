@@ -100,6 +100,32 @@ only in the browser, on any computer.
 
 <p align="center"><img src="docs/img/web-phone.png" width="300" alt="The LifeDash web app on an iPhone"></p>
 
+## One task at a time
+
+The way LifeDash is meant to be used, day to day: don't stare at the whole
+list, pick the next step and finish it.
+
+<p align="center"><img src="docs/img/mac-next-task.png" width="560" alt="The Next task card"></p>
+
+1. **Look at the Next task card.** It sits at the top of the list and shows
+   the one thing to do now: the first open task of your first active project,
+   starting with what is already in progress.
+2. **Work on that, and only that.** Everything else can wait in the list.
+3. **Tick it.** The check mark completes it, the card moves on to the next
+   task, and you start again.
+
+Planning happens in the list (order projects and tasks, mark something
+*urgent* to move it to the top); doing happens in the card, one task at a
+time. When you don't need the card, a double-click hides it, and the target
+icon brings it back.
+
+**Compact mode** (Mac, *View › Compact Mode*) takes this one step further:
+the window folds into a slim bar at the edge of the screen with only the next
+task and its check mark. It can stay on top of your other windows while you
+work, so the next step is always in sight and nothing else is. Tick the task
+and the bar shows the following one; double-click the bar to go back to the
+full dashboard.
+
 ## Everyday use
 
 - **Add**: the round **+** button creates a project or a task. Inside a
@@ -122,8 +148,8 @@ only in the browser, on any computer.
   and types and give each one an icon and a colour.
 - **Duplicate** a project or task to reuse it (the monthly shopping, a
   recurring check-up).
-- **Compact mode** (Mac, *View › Compact Mode*): one slim bar on the
-  edge of the screen with just the next task and its check mark.
+- **Compact mode** (Mac, *View › Compact Mode*): see *One task at a time*
+  above.
 
 <p align="center"><img src="docs/img/mac-new-project.png" width="560" alt="Creating a new project on the Mac"></p>
 
