@@ -37,6 +37,8 @@ kept in sync and encrypted end to end: your data stays yours.
   goal to reach and the habits that get you there.
 - **Home and plans**: the shelf to put up, herbs for the balcony, flights and
   a hotel for the next trip.
+- **The few things with a date**: renewing a pass or sending an invoice gets a
+  due date and a gentle reminder, so nothing slips and nothing nags.
 - **Your way of working**: create your own categories for projects and your
   own types for tasks, each with the icon and colour you choose. A designer,
   a developer, a student and a coach will each shape LifeDash differently,
