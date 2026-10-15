@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/img/icon.png" width="128" alt="LifeDash icon"></p>
 
-<h1 align="center">LIFEDASH</h1>
+<h1 align="center">LifeDash</h1>
 
 <p align="center"><b><a href="https://github.com/antarcorrado/lifedash/releases/latest/download/LifeDash.zip">Download for Mac</a></b> · <b><a href="https://www.antarcorrado.com/lifedash/">Open the web app</a></b><br>macOS 13 or later · Apple Silicon and Intel · free</p>
 
