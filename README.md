@@ -11,6 +11,10 @@ December. Each area of your life is a project, each thing to do is a task, and
 the app always shows you the next step, so the day feels like a list of small
 wins instead of a pile of worries.
 
+**It adapts to you, not the other way round.** Your own categories, task
+types, icons and colours, sub-tasks as deep as a project needs: everyone ends
+up with their own method.
+
 **Built to work with AI agents.** Claude Code, Codex, Cursor and other agents
 can read your projects, add tasks and tick them off through the `lifedash`
 command, which the app installs together with the instructions the agents need.
@@ -33,12 +37,15 @@ kept in sync and encrypted end to end: your data stays yours.
   goal to reach and the habits that get you there.
 - **Home and plans**: the shelf to put up, herbs for the balcony, flights and
   a hotel for the next trip.
-- **The few things with a date**: renewing a pass or sending an invoice gets a
-  due date and a gentle reminder, so nothing slips and nothing nags.
+- **Your way of working**: create your own categories for projects and your
+  own types for tasks, each with the icon and colour you choose. A designer,
+  a developer, a student and a coach will each shape LifeDash differently,
+  and that is the point: there is no method to adopt, only yours to build.
 
 ## How it works, in one minute
 
-1. **Projects** are the areas of your life (Home, Health, a trip, a client).
+1. **Projects** are the areas of your life (Home, Health, a trip, a client),
+   organised with categories you define.
    Each one has a status: *Today* (active now), *Planned*, *Paused* or
    *Done*.
 2. **Tasks** live inside projects, and every task can hold its own
@@ -108,6 +115,9 @@ only in the browser, on any computer.
   images show a preview right under the description.
 - **Fold and focus**: every project and task with sub-tasks is an accordion.
   Open only what you are working on; the app remembers.
+- **Make it yours**: next to the category and type menus in the editor, the
+  pencil opens the list, where you add, rename, reorder and delete categories
+  and types and give each one an icon and a colour.
 - **Duplicate** a project or task to reuse it (the monthly shopping, a
   recurring check-up).
 - **Compact mode** (Mac, *View › Compact Mode*): one slim bar on the
@@ -124,6 +134,16 @@ what you are owed, what you have received and the total, by month and by
 year, by status and by category.
 
 <p align="center"><img src="docs/img/mac-finance.png" width="560" alt="The Finance view on the Mac"></p>
+
+Outside the Finance view, amounts stay hidden. A paid project only shows a
+small **€** next to its name, which tells you how things stand at a glance
+without showing a single figure, even with someone looking at your screen:
+
+| Icon | Meaning |
+|---|---|
+| empty € | the work is still to be paid |
+| half-filled € | part of it has arrived |
+| filled € | paid in full |
 
 ## Your data, your privacy
 
