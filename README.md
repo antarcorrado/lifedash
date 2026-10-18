@@ -85,7 +85,9 @@ English everywhere else.
 
 1. On the Mac, open **Account** and create an account: choose a username and
    a password, then scan the QR code with an authenticator app (Google
-   Authenticator, 1Password, Authy...).
+   Authenticator, 1Password, Authy...). You can also choose **Later**: for the
+   first 14 days you can sign in without the code, and from day 10 LifeDash
+   reminds you to add it.
 2. **Save the recovery kit** the app gives you. It is the only way back in if
    you forget your password: nobody, not even the server administrator, can
    read or recover your data without it.
@@ -153,6 +155,17 @@ full dashboard.
   recurring check-up).
 - **Compact mode** (Mac, *View › Compact Mode*): see *One task at a time*
   above.
+- **Menu bar mode** (Mac, *View › Menu Bar Mode*, on by default for new
+  installs): LifeDash leaves the Dock and lives in the menu bar; click the icon to
+  show or hide the window, right-click it for Always on Top, Account, or to turn
+  the mode off. The «…» menu in the header has the same Account entries, Compact
+  Mode and Menu Bar Mode.
+- **Undo** after deleting a project or task, or changing a status: a bar at the
+  bottom offers *Undo* for a few seconds (Mac and web).
+- **Two-finger swipe** on a row (Mac trackpad, or a finger on the phone): right to
+  edit, left to add a task or subtask.
+- **Currency** (Mac, *File › Currency*, or the symbol next to any amount): €, $,
+  £ and more.
 
 <p align="center"><img src="docs/img/mac-new-project.png" width="560" alt="Creating a new project on the Mac"></p>
 
@@ -183,13 +196,17 @@ without showing a single figure, even with someone looking at your screen:
   there on every device, but only as unreadable blobs: it cannot see your
   projects, tasks or attachments.
 - **Two-factor sign-in.** Every new device needs your password and a code from
-  your authenticator app.
-- **Download everything.** In the web app, **Account › Your data › Download
-  all data** gives you a zip with all your projects and tasks (`tasks.json`)
+  your authenticator app. New accounts can add the code within 14 days; after
+  that, signing in asks for it before letting you in.
+- **Download everything.** In the web app or on the Mac, **Account › Your data ›
+  Download all data** gives you a zip with all your projects and tasks (`tasks.json`)
   and every attachment, decrypted on your device.
-- **Delete your account.** **Account › Delete account** removes your account
-  and every piece of your data from the server, for good.
-- **No tracking.** No analytics, no ads, no third-party scripts.
+- **Delete your account.** **Account › Danger zone** removes your account
+  and every piece of your data from the server, for good, after two
+  confirmations (the first offers to download your data).
+- **No tracking.** No analytics, no ads, no third-party scripts. **Copy
+  diagnostics** (Account menu) puts a short technical summary on your clipboard
+  for bug reports, with no titles or amounts, and sends nothing.
 
 ## Use it from the command line and AI agents
 
