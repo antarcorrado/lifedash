@@ -3,6 +3,15 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.1
+
+- Finance: the first card has no background, the invoice icon (bottom right) is clickable with a tooltip, the year chip looks different from the months, and «By category» and «By status» can be shown as bars or as a pie chart (category is a pie by default, sorted from the largest slice, with the legend highlighting the slice under the pointer).
+- Header: compact mode has its own button (two vertical arrows) and the pin, theme and compact icons are dimmer at rest, with the same hierarchy in the light theme. The «…» menu has Menu Bar Mode and Open at Login first, and the menu bar icon's menu has Open at Login instead of Always on Top.
+- Dragging a project or task into a text field pastes its title, not its id.
+- On the pie charts, hovering a slice or a legend row dims the others (Mac and web).
+- A Mac set to Italian now shows the interface in Italian (the Italian localisation was empty, so the system fell back to English).
+- The File menu no longer has «Choose Data Folder…» and «Use the Default Folder»; the close button's tooltip is gone, and the «…» icon matches the other header icons.
+
 ## 1.4.0
 
 - Account window on the Mac now mirrors the web: list check, members (admin), your data (download a zip), and a Danger zone to delete the account with two confirmations. Sections open by clicking the whole row.

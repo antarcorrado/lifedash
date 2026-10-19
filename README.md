@@ -175,7 +175,7 @@ Your work pays: press the **€** button to see only the projects that involve m
 one you can set an amount, whether it has been paid and when, whether an
 invoice was issued, and split a payment into instalments. At the top you see
 what you are owed, what you have received and the total, by month and by
-year, by status and by category.
+year, by category and by status, as bars or as a pie chart.
 
 <p align="center"><img src="docs/img/mac-finance.png" width="560" alt="The Finance view on the Mac"></p>
 
