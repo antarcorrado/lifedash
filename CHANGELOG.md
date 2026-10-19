@@ -3,6 +3,17 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.2
+
+- «Check for Updates…» is in the «…» menu as well as the LifeDash menu, and turns into «Restart to Update to X» once the update is downloaded.
+- Editor and list sheets are translucent glass that blurs what is behind them, always, with no glow around lit chips when the date picker opens.
+- Editor: lit chips are a little darker so the white text reads on light colours, the currency symbol has no background (web), and in instalments «Issued» comes before the date (Mac and web).
+- Completed tasks inside a project that is not completed are listed together, without date headings (Mac and web); cancelled ones keep the grouping.
+- The compact-mode tooltip disappears as soon as you click the button.
+- «Copy Diagnostics» is always in English and no longer includes the sync server.
+- The web app checks every script and the stylesheet with Subresource Integrity, and the menu openers can be reached with the keyboard.
+- Dimmer text is a little more readable.
+
 ## 1.4.1
 
 - Finance: the first card has no background, the invoice icon (bottom right) is clickable with a tooltip, the year chip looks different from the months, and «By category» and «By status» can be shown as bars or as a pie chart (category is a pie by default, sorted from the largest slice, with the legend highlighting the slice under the pointer).
