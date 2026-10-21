@@ -177,7 +177,7 @@ full dashboard.
 Plan a trip, a move or a job with someone else: share a project with other LifeDash
 users and you both see the same tasks and sub-tasks, and every change reaches everyone.
 
-1. Open the project in the editor and find **Sharing**.
+1. Open the project in the editor (or create a new one) and find **Share**.
 2. Type the username of the person (or several, separated by spaces or commas) and press
    **Invite**. LifeDash always answers *Invitation sent*: it never tells you whether that
    username exists, so nobody can use it to find out who has an account.
@@ -193,10 +193,12 @@ phone) to see who it is shared with, when it was last changed and by whom.
 
 | Shared with everyone | Only yours |
 |---|---|
-| name, description, attachments | where the project sits in your list (Today, Planned, Paused, Completed) and its order |
-| every task and sub-task, their order and status | category |
-| due date and work days | reminders on the project |
-|  | amount, invoice and payments: the others never see them |
+| name, description, category, attachments | where the project sits in your list (Today, Planned, Paused, Completed) and its order |
+| every task and sub-task, their order and status | amount, invoice and payments: the others never see them |
+| due date, reminders and work days |  |
+
+A category you made yourself travels with the project: whoever joins gets it in their
+list, with its name, icon and colour.
 
 So if you move the project to *Today*, it stays where it was for your friend; if you move
 a task to the top, it moves for everyone.

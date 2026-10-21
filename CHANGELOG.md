@@ -3,6 +3,17 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.7
+
+- Shared projects: the category (with its name, icon and colour) and the project's reminders are now shared too; only the project's place in your list and its payments stay yours.
+- You can share a project while creating it: type the usernames in «Share» and they are invited when you save.
+- Mac: the «Share» section of the project editor lines up with the other fields.
+- Web: inviting someone works in Safari too (it failed with «The data provided to an operation does not meet requirements»).
+- Web: two people editing a shared project at the same moment no longer risk losing a change.
+- Web sign-in: «Sign in with a passkey» comes first; the authentication code comes after the anti-bot check; «Forgot password?» sits under the password, and «Sign up» is a button next to «Sign in».
+- Web: switches whose text is long wrap onto two lines instead of being cut, and the account panel's «Notify me of shared project invitations» is no longer hidden under the test-notification button.
+- Everything is in English unless your system language is Italian, including server error messages that used to appear in Italian.
+
 ## 1.4.6
 
 - Web: sign in with a passkey (Face ID, Touch ID or the device PIN), without password or code, and still end-to-end encrypted. Add one from Account › Passkeys.
