@@ -186,8 +186,9 @@ users and you both see the same tasks and sub-tasks, and every change reaches ev
    notifications turned on, plus a notification if they do. They choose **Accept** or
    **Decline**.
 
-In the list a shared project carries a small **person icon**: hover it (or tap it on the
-phone) to see who it is shared with, when it was last changed and by whom.
+In the list a shared project carries a small **person icon**, grey until someone has
+accepted: hover it (or tap it on the phone) to see who it is shared with, when it was last
+changed and by whom. In the editor, people who joined have a green icon.
 
 **What is shared and what stays yours**
 
@@ -216,9 +217,9 @@ The others edit everything inside and can *Leave the project* at any time.
 project and nothing else of your account. LifeDash gives the key to each person locked
 with their own key, so the server stores it but cannot read it, and it cannot read the
 project either. When someone leaves or is removed, the project gets a new key and they
-stop seeing changes. In the Sharing section every person has a short **fingerprint**:
-compare it out loud with theirs if you want to be sure you are sharing with the right
-person. Shared projects are never public pages and never show up in search engines.
+stop seeing changes. Hovering a name in the Share section shows that person's key
+**fingerprint** (yours is at the bottom): compare it out loud with theirs if you want to be
+sure you are sharing with the right person. Shared projects are never public pages and never show up in search engines.
 
 Available in the web app now and in the Mac app from version 1.4.6.
 

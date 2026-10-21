@@ -3,6 +3,13 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.8
+
+- Mac: «Stop sharing», «Leave the project» and the × next to a person now ask for confirmation and work (the confirmation never appeared before).
+- Pressing Return in the usernames field of «Share» invites them instead of saving and closing the editor, on the Mac and on the web.
+- The person icon of a shared project stays grey until someone accepts; in the editor, people who joined have a green icon, and an invitation shows up in the list right away.
+- The key fingerprints are no longer shown next to each person: hover a name to see it.
+
 ## 1.4.7
 
 - Shared projects: the category (with its name, icon and colour) and the project's reminders are now shared too; only the project's place in your list and its payments stay yours.
