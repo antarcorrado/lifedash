@@ -69,6 +69,9 @@ kept in sync and encrypted end to end: your data stays yours.
 
 ## Get started
 
+Step by step, with what to do if you lose your password or phone:
+[docs/QUICKSTART.md](docs/QUICKSTART.md).
+
 ### On the Mac
 
 1. Download **[LifeDash.zip](https://github.com/antarcorrado/lifedash/releases/latest/download/LifeDash.zip)**,
@@ -83,7 +86,7 @@ English everywhere else.
 
 ### On your phone (and any browser)
 
-1. On the Mac, open **Account** and create an account: choose a username and
+1. On the Mac, open **Settings** (LifeDash › Settings…, ⌘,) and create an account: choose a username and
    a password, then scan the QR code with an authenticator app (Google
    Authenticator, 1Password, Authy...). You can also choose **Later**: for the
    first 14 days you can sign in without the code, and from day 10 LifeDash
@@ -157,8 +160,8 @@ full dashboard.
   above.
 - **Menu bar mode** (Mac, *View › Menu Bar Mode*, on by default for new
   installs): LifeDash leaves the Dock and lives in the menu bar; click the icon to
-  show or hide the window, right-click it for Always on Top, Account, or to turn
-  the mode off. The «…» menu in the header has the same Account entries, Compact
+  show or hide the window, right-click it for Always on Top, Settings, or to turn
+  the mode off. The «…» menu in the header has the same Settings entries, Compact
   Mode and Menu Bar Mode.
 - **Undo** after deleting a project or task, or changing a status: a bar at the
   bottom offers *Undo* for a few seconds (Mac and web).
@@ -198,14 +201,14 @@ without showing a single figure, even with someone looking at your screen:
 - **Two-factor sign-in.** Every new device needs your password and a code from
   your authenticator app. New accounts can add the code within 14 days; after
   that, signing in asks for it before letting you in.
-- **Download everything.** In the web app or on the Mac, **Account › Your data ›
-  Download all data** gives you a zip with all your projects and tasks (`tasks.json`)
+- **Download everything.** In the web app (**Account**) or on the Mac
+  (**Settings**), **Your data › Download all data** gives you a zip with all your projects and tasks (`tasks.json`)
   and every attachment, decrypted on your device.
-- **Delete your account.** **Account › Danger zone** removes your account
+- **Delete your account.** **Danger zone**, in the same place, removes your account
   and every piece of your data from the server, for good, after two
   confirmations (the first offers to download your data).
 - **No tracking.** No analytics, no ads, no third-party scripts. **Copy
-  diagnostics** (Account menu) puts a short technical summary on your clipboard
+  diagnostics** (Settings menu) puts a short technical summary on your clipboard
   for bug reports, with no titles or amounts, and sends nothing.
 
 ## Use it from the command line and AI agents
@@ -230,7 +233,7 @@ call the command by its full path,
 
 **2. Give it a token.** A script cannot type your password and a 6-digit code,
 so the command signs in with a token instead. In the web app open **Account ›
-Tokens for scripts and agents** (on the Mac: **Account › Tokens for scripts
+Tokens for scripts and agents** (on the Mac: **Settings › Tokens for scripts
 and agents › New token…**), give it a name and choose *read only* if the agent
 should only look. Copy the token, then:
 
@@ -279,9 +282,18 @@ right away.
 - Web app: any recent browser. Push notifications on iPhone need iOS 16.4 or
   later and the app added to the Home Screen.
 
+## Your own server
+
+LifeDash syncs through the official server by default. You can also run the same
+server on your own web space (PHP and Apache, no database) and choose it in the
+Mac's Settings (**Custom** server). The server code and its installation guide will
+be published together with the rest of the source.
+
 ## Feedback
 
-Found a bug or have an idea? [Open an issue](https://github.com/antarcorrado/lifedash/issues).
+Found a bug or have an idea? [Open an issue](https://github.com/antarcorrado/lifedash/issues)
+(see [CONTRIBUTING.md](CONTRIBUTING.md)). Security problems go through a private
+report instead: see [SECURITY.md](SECURITY.md).
 
 ## License
 

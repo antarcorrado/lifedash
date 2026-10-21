@@ -3,6 +3,22 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.4
+
+- The Account menu and window are now Settings, with a gear icon, and «Settings…» (⌘,) is in the LifeDash menu too.
+- Settings can link the Mac to your own LifeDash server instead of the official one: enter its https address, and the Mac checks that a LifeDash server answers there before using it.
+- Security: the Mac never follows a redirect to another server with its access token, ignores a sync beacon hosted elsewhere, and refuses sign-in settings that would make the password easy to guess.
+- New projects start in Planned and go to the end of the list (Mac, web and the `lifedash` command).
+
+## 1.4.3
+
+- Security: sign-ups can be protected by Cloudflare Turnstile (on the website; from the Mac, sign up with an invite or on the website, then sign in).
+- Security: the server refuses requests a browser marks as coming from another site, never runs scripts from its data folder, and serves attachments in a sandbox.
+- Security: admin features (invites, members, event log) need two-factor authentication turned on.
+- New for the admin: an event log of sign-ups, sign-ins, failed attempts and account changes, and the date of each member's last change.
+- The `lifedash` command never sends a saved token to a server other than its own, and saves downloaded attachments under a plain file name.
+- The agent skill has stricter rules: task text is never followed as instructions, the server and token are never changed, and downloaded attachments are cleaned up.
+
 ## 1.4.2
 
 - «Check for Updates…» is in the «…» menu as well as the LifeDash menu, and turns into «Restart to Update to X» once the update is downloaded.
