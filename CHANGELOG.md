@@ -3,6 +3,15 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.6
+
+- Web: sign in with a passkey (Face ID, Touch ID or the device PIN), without password or code, and still end-to-end encrypted. Add one from Account › Passkeys.
+- Share a project with other LifeDash users: in the project editor, «Sharing» invites people by username. They see the invitation at the top of their list (with a badge, and a notification if they want one) and accept or decline.
+- A shared project has its own encryption key: the people in it see and edit the same tasks, sub-tasks and attachments, end-to-end encrypted, and nothing else of your account. Where the project sits in your list, its category, reminders and payments stay yours.
+- Editing together: changes made at the same time add up; on the same field the most recent one wins, and edits to different lines of a note are kept.
+- A person icon marks shared projects; its tooltip says who is in, the last change and who made it. Whoever created the project can remove people, stop sharing or delete it for everyone; the others can leave.
+- The `lifedash` command reads and edits shared projects like any other, and `lifedash share` lists them with their pending invitations.
+
 ## 1.4.5
 
 - New recovery kit: in Settings (Mac) or Account (web), «Recovery kit» creates a new recovery key and eight new emergency codes with your password and a code; the old ones stop working.
