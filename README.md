@@ -172,6 +172,54 @@ full dashboard.
 
 <p align="center"><img src="docs/img/mac-new-project.png" width="560" alt="Creating a new project on the Mac"></p>
 
+## Share a project
+
+Plan a trip, a move or a job with someone else: share a project with other LifeDash
+users and you both see the same tasks and sub-tasks, and every change reaches everyone.
+
+1. Open the project in the editor and find **Sharing**.
+2. Type the username of the person (or several, separated by spaces or commas) and press
+   **Invite**. LifeDash always answers *Invitation sent*: it never tells you whether that
+   username exists, so nobody can use it to find out who has an account.
+3. The other person sees the invitation at the top of their list, on the Mac and on the
+   web, with a badge in the header (and on the Dock icon), whether or not they have
+   notifications turned on, plus a notification if they do. They choose **Accept** or
+   **Decline**.
+
+In the list a shared project carries a small **person icon**: hover it (or tap it on the
+phone) to see who it is shared with, when it was last changed and by whom.
+
+**What is shared and what stays yours**
+
+| Shared with everyone | Only yours |
+|---|---|
+| name, description, attachments | where the project sits in your list (Today, Planned, Paused, Completed) and its order |
+| every task and sub-task, their order and status | category |
+| due date and work days | reminders on the project |
+|  | amount, invoice and payments: the others never see them |
+
+So if you move the project to *Today*, it stays where it was for your friend; if you move
+a task to the top, it moves for everyone.
+
+**Editing together.** Two people can change the project at the same time, even offline.
+Changes to different tasks simply add up; when you both change the same thing, the most
+recent change wins, and if you both edit the same note or description on different lines,
+LifeDash keeps both edits.
+
+**Who can do what.** Whoever created the project invites people, removes them and can
+delete it for everyone (or *Stop sharing*, which keeps it as a normal project of theirs).
+The others edit everything inside and can *Leave the project* at any time.
+
+**Still end-to-end encrypted.** Each shared project has its own key, which opens that
+project and nothing else of your account. LifeDash gives the key to each person locked
+with their own key, so the server stores it but cannot read it, and it cannot read the
+project either. When someone leaves or is removed, the project gets a new key and they
+stop seeing changes. In the Sharing section every person has a short **fingerprint**:
+compare it out loud with theirs if you want to be sure you are sharing with the right
+person. Shared projects are never public pages and never show up in search engines.
+
+Available in the web app now and in the Mac app from version 1.4.6.
+
 ## Money: the Finance view
 
 Your work pays: press the **€** button to see only the projects that involve money. For each
@@ -207,6 +255,9 @@ without showing a single figure, even with someone looking at your screen:
 - **Delete your account.** **Danger zone**, in the same place, removes your account
   and every piece of your data from the server, for good, after two
   confirmations (the first offers to download your data).
+- **Passkeys.** In the web app, **Account › Passkeys** adds one: then you sign in with
+  Face ID, Touch ID or your device PIN, no password or code, and the passkey itself opens
+  your encrypted data (the server only keeps a locked copy of the key).
 - **New recovery kit.** Lost the kit or used up the emergency codes? **Recovery
   kit** in the same panel creates a new one, and the old one stops working.
 - **No tracking.** No analytics, no ads, no third-party scripts. **Copy
@@ -256,8 +307,13 @@ lifedash tasks --open --sort due                   # what is still to do, by due
 lifedash task add --project green-studio --title "Send the mockups" --due 2026-11-03
 lifedash task start task-1a2b3c4d                  # in progress
 lifedash task done task-1a2b3c4d                   # tick it off
+lifedash share                                     # shared projects: with whom, last change and by whom
 lifedash --help                                    # every command and option
 ```
+
+Tasks in a shared project are read and changed like any other, and the change reaches
+everyone with your username as the author. Inviting, accepting and leaving happen in the
+app, never from a token.
 
 Messages are in English, or in Italian when your system language is Italian.
 
