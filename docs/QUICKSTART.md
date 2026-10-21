@@ -64,7 +64,7 @@ in a drawer, an encrypted drive.
 | --- | --- |
 | The password | On the web: **Forgot your password?**, then the recovery key and a code (or an emergency code). You choose a new password; every device signs in again. |
 | The phone with the authenticator app | Sign in with an **emergency code** instead of the 6-digit one. Each code works once; the account panel shows how many are left. |
-| The recovery kit, but you still know the password | Nothing changes day to day. But you no longer have a way back if you forget the password, so keep it in a password manager, and download your data now and then (**Your data › Download all data**). |
+| The recovery kit, or you used up the emergency codes | Create a new one: Account (web) or Settings (Mac) › **Recovery kit**, with your password and a code. The old key and codes stop working. |
 | Password **and** recovery kit | Your data cannot be opened any more, by anyone, not even the server administrator. This is the price of end-to-end encryption. A Mac that is still linked keeps working: from its Settings, **Download all data** saves a copy of everything. |
 
 ## Next steps

@@ -3,6 +3,13 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.5
+
+- New recovery kit: in Settings (Mac) or Account (web), «Recovery kit» creates a new recovery key and eight new emergency codes with your password and a code; the old ones stop working.
+- Sign-up links to the new terms of service and privacy notice.
+- The server pauses new sign-ups and new attachments when it runs out of space, with a clear message; existing data keeps syncing.
+- Web: signing in and password recovery are protected by Cloudflare Turnstile too, and the sign-in code field shows «123 456» as you type.
+
 ## 1.4.4
 
 - The Account menu and window are now Settings, with a gear icon, and «Settings…» (⌘,) is in the LifeDash menu too.

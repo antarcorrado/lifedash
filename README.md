@@ -207,6 +207,8 @@ without showing a single figure, even with someone looking at your screen:
 - **Delete your account.** **Danger zone**, in the same place, removes your account
   and every piece of your data from the server, for good, after two
   confirmations (the first offers to download your data).
+- **New recovery kit.** Lost the kit or used up the emergency codes? **Recovery
+  kit** in the same panel creates a new one, and the old one stops working.
 - **No tracking.** No analytics, no ads, no third-party scripts. **Copy
   diagnostics** (Settings menu) puts a short technical summary on your clipboard
   for bug reports, with no titles or amounts, and sends nothing.
@@ -275,6 +277,9 @@ LifeDash checks for a new version every time it opens, downloads it in the
 background and installs it when you quit. When an update is ready, the
 *LifeDash* menu offers **Restart to Update**; **Check for Updates…** looks
 right away.
+
+The official service has a [privacy notice](https://www.antarcorrado.com/lifedash/app/privacy.html#en)
+and [terms of service](https://www.antarcorrado.com/lifedash/app/terms.html#en).
 
 ## Requirements
 
