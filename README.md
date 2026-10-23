@@ -188,7 +188,9 @@ users and you both see the same tasks and sub-tasks, and every change reaches ev
 
 In the list a shared project carries a small **person icon**, grey until someone has
 accepted: hover it (or tap it on the phone) to see who it is shared with, when it was last
-changed and by whom. In the editor, people who joined have a green icon.
+changed and by whom. In the editor, people who joined have a green icon. Turn on
+**Notify me of changes** in the Share section to get a notification when someone else
+changes anything in the project.
 
 **What is shared and what stays yours**
 
