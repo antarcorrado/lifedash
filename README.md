@@ -351,7 +351,7 @@ and [terms of service](https://www.antarcorrado.com/lifedash/app/terms.html#en).
 ## Your own server
 
 LifeDash syncs through the official server by default. You can also run the same
-server on your own web space (PHP and Apache, no database) and choose it in the
+server on your own web space and choose it in the
 Mac's Settings (**Custom** server). The server code and its installation guide will
 be published together with the rest of the source.
 

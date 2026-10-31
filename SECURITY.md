@@ -30,7 +30,3 @@ encryption protocol.
 
 Out of scope: problems that need an already compromised device, social engineering,
 and reports from automated scanners without a concrete impact.
-
-How LifeDash protects data, and its known limits, are described in
-[`server/SECURITY.md`](server/SECURITY.md) (in Italian) once the server code is
-public.
