@@ -3,19 +3,22 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.20
+
+- Agent loops, verification and queues now all live in your projects.
+
 ## 1.4.19
 
+- Agents can send a notification when their loop stops. The project name never reaches the server.
 - Projects show the state of their agent loop, written from the CLI with `lifedash project loop`. On the Mac and on the web.
 
 ## 1.4.18
 
-- Mac: LoopDash tasks waiting for verification can be marked as verified right from LifeDash, with the button that appears on the row.
 - Keep several tasks open: Cmd-click opens one without closing the others, Shift-click opens or closes every task in between. On the Mac and on the web.
 - Mac: any task can be dragged in and out of parents, to any level. The bottom edge of a row now places it after that row.
 - CLI: writes retry longer when several agents work at the same time.
 - CLI: `lifedash next` gives the next task, and `task done --next` closes one and returns the next in a single step.
 - Projects can require verification: completed tasks wait in a To verify section until you tick them. On the Mac, on the web and in the CLI.
-- Finished LoopDash groups now sit inside the project's Completed section. On the Mac and on the web.
 
 ## 1.4.17
 
