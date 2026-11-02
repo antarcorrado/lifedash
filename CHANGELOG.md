@@ -3,6 +3,10 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.21
+
+- Skill: each project now links to LifeDash through a small project file.
+
 ## 1.4.20
 
 - Agent loops, verification and queues now all live in your projects.
