@@ -3,6 +3,73 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.19
+
+- Projects show the state of their agent loop, written from the CLI with `lifedash project loop`. On the Mac and on the web.
+
+## 1.4.18
+
+- Mac: LoopDash tasks waiting for verification can be marked as verified right from LifeDash, with the button that appears on the row.
+- Keep several tasks open: Cmd-click opens one without closing the others, Shift-click opens or closes every task in between. On the Mac and on the web.
+- Mac: any task can be dragged in and out of parents, to any level. The bottom edge of a row now places it after that row.
+- CLI: writes retry longer when several agents work at the same time.
+- CLI: `lifedash next` gives the next task, and `task done --next` closes one and returns the next in a single step.
+- Projects can require verification: completed tasks wait in a To verify section until you tick them. On the Mac, on the web and in the CLI.
+- Finished LoopDash groups now sit inside the project's Completed section. On the Mac and on the web.
+
+## 1.4.17
+
+- Editing a task inside a completed task or project now shows its real position, and saving no longer moves it elsewhere. On the Mac and on the web.
+
+## 1.4.16
+
+- Completing a task now gives a small burst of yellow stars at the checkbox, with a sound. When it completes a whole project the burst is bigger and the sound is different. On the Mac and on the web.
+- Projects have an amount field too, shown with the balance of their tasks.
+- Web: the amount is labelled and shows the € sign like on the Mac, and the fields in the editor follow the same order.
+
+## 1.4.15
+
+- Attachments: images with transparency show without a background, in the list and in the large preview.
+- Drag a file from the computer onto a task or project row to attach it right away, or into the open editor to add it with the rest. On the Mac and on the web.
+- Office and iWork documents (Word, Excel, PowerPoint, Pages, Numbers, Keynote) show their first page among the previews, with a coloured badge. On the Mac QuickLook draws it; on the web the preview saved inside the file is used.
+
+## 1.4.14
+
+- Mac: in the task editor, the € sign after the amount is visible again.
+
+## 1.4.13
+
+- Mac: in the task editor, the amount row no longer shifts the form sideways; it is labelled «Amount» and the € sign follows the figure.
+
+## 1.4.12
+
+- Tasks have a € field: two chips, Expense and Income (both can be off), with the amount on the same line. The task row shows it in red or green, and the project row shows the balance, income minus expenses. On the Mac, on the web and in the CLI (`--expense`, `--income`, `--money none`).
+
+## 1.4.11
+
+- New project status «Blocked», between Planned and Paused: on the Mac, on the web and in the CLI (`blocked`).
+- Finance on the web: with no year selected, the charts by status and by category no longer stretch past the right edge.
+
+## 1.4.10
+
+- Lists in a description can be nested: the number of dashes is the level (`-task`, `--sub-task` or `- - sub-task`, no space needed after the dashes), and saving creates the whole tree of sub-tasks at once. On the Mac and on the web.
+- A project whose tasks are all completed or cancelled moves to Completed.
+- Reopening a completed project puts it back where it was (Planned, Paused…) instead of Today.
+- The messages at the bottom fade in and out, are smaller, and say «Completed» or «Reopened»; on the Mac they float over the list like on the web.
+- In the project editor, the Share section sits just above «More».
+- Finance: in the charts by status and by category, each icon has the colour of its bar or slice.
+- Mac: no stray line above the first category when Today is empty; the category lines have the same margin on both sides; no icon next to «Settings…» in the menus.
+
+## 1.4.9
+
+- Shared projects arrive complete the moment the invitation is accepted: every new account gets its sharing key when it is created, so nobody waits for a second hand-over of the key.
+- Shared projects: a project still waiting for its key can no longer be overwritten with an empty one (an «Undo» or an editor opened in that moment used to wipe name, description, tasks and attachments for everyone); it cannot be edited until its content arrives.
+- New «Notify me of changes» switch in a shared project's Share section: a notification when someone else changes anything in it (at most one every 5 minutes per project).
+- Under every notification switch, «Enable notifications» when they are off; on an iPhone outside the Home Screen the switch turns grey with «Add LifeDash to your Home Screen, then enable notifications to receive them».
+- Renaming a sub-task no longer moves it out of its parent: tasks and projects are identified by their ID only, and IDs are unique across the whole file.
+- Mac: the admin users list shows each person's last change; «Settings…» sits above «Check for updates…» in the ••• menu; «Completed» and «Cancelled» open per project.
+- Web: long attachment names no longer push the file list off the screen; attachment previews are kept on the device and load instantly.
+
 ## 1.4.8
 
 - Mac: «Stop sharing», «Leave the project» and the × next to a person now ask for confirmation and work (the confirmation never appeared before).
