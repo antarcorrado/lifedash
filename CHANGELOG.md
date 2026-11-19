@@ -3,6 +3,10 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.42
+
+- Search on the Mac stays smooth even with a single letter: the list filters right away, and rows open with their details from two letters on.
+
 ## 1.4.41
 
 - Start typing a letter or a number anywhere in the list and the search opens with it.
