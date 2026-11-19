@@ -144,6 +144,11 @@ full dashboard.
   description, status, priority, due date, reminders, attachments.
 - **Tick**: the check mark completes a task. Completed tasks fold away under
   *Done*, with the date they were closed.
+- **Search**: the magnifier above the list, or just start typing a letter or a
+  number. Matching words are highlighted and only the tasks that contain them open
+  up. Nothing found? One click creates a project named after your search.
+- **No twins**: if a new project gets the same title as an existing one, the
+  editor tells you and takes you to the other one.
 - **Lists become sub-tasks**: write a description as a list (`- Milk`,
   `- Bread`) and each line becomes a sub-task you can tick on its own.
 - **Attachments**: add photos, PDFs and documents (up to 10 MB each) to any
@@ -198,7 +203,7 @@ changes anything in the project.
 |---|---|
 | name, description, category, attachments | where the project sits in your list (Today, Planned, Paused, Completed) and its order |
 | every task and sub-task, their order and status | amount, invoice and payments: the others never see them |
-| due date, reminders and work days |  |
+| due date, reminders and work days, € fields |  |
 
 A category you made yourself travels with the project: whoever joins gets it in their
 list, with its name, icon and colour.
@@ -269,6 +274,10 @@ without showing a single figure, even with someone looking at your screen:
   diagnostics** (Settings menu) puts a short technical summary on your clipboard
   for bug reports, with no titles or amounts, and sends nothing.
 
+Common questions are in the [FAQ](docs/FAQ.md), and
+[How LifeDash keeps your data safe](docs/HOW-SECURITY-WORKS.md) explains security in plain
+language.
+
 ## Use it from the command line and AI agents
 
 The `lifedash` command reads and changes your projects and tasks from the
@@ -277,50 +286,18 @@ task when a job is done, list what is due this week, or tick something off.
 It ships inside the Mac app, which installs it the first time you open it,
 and it needs [Node.js](https://nodejs.org) 18 or later.
 
-**1. Check that it is there:**
+Create a token in **Account › Tokens for scripts and agents** (on the Mac, in
+**Settings**), then:
 
 ```bash
-lifedash --help
-```
-
-The app links the command into the first folder it can write among
-`/opt/homebrew/bin`, `/usr/local/bin` and `~/.local/bin`. If your Terminal
-answers *command not found*, that folder is not in your `PATH`: add it, or
-call the command by its full path,
-`/Applications/LifeDash.app/Contents/Resources/cli/lifedash.mjs`.
-
-**2. Give it a token.** A script cannot type your password and a 6-digit code,
-so the command signs in with a token instead. In the web app open **Account ›
-Tokens for scripts and agents** (on the Mac: **Settings › Tokens for scripts
-and agents › New token…**), give it a name and choose *read only* if the agent
-should only look. Copy the token, then:
-
-```bash
-lifedash login        # paste the token and press Enter
-lifedash whoami       # checks that it works
-```
-
-The token stays in `~/.config/lifedash/credentials.json`, readable only by
-you. It opens your data without your password, so treat it like one: you can
-see every token in the Account panel and revoke it at any time.
-
-**3. Use it:**
-
-```bash
-lifedash projects                                  # open projects
+lifedash login                                     # paste the token and press Enter
 lifedash tasks --open --sort due                   # what is still to do, by due date
 lifedash task add --project green-studio --title "Send the mockups" --due 2026-11-03
-lifedash task start task-1a2b3c4d                  # in progress
 lifedash task done task-1a2b3c4d                   # tick it off
-lifedash share                                     # shared projects: with whom, last change and by whom
-lifedash --help                                    # every command and option
 ```
 
-Tasks in a shared project are read and changed like any other, and the change reaches
-everyone with your username as the author. Inviting, accepting and leaving happen in the
-app, never from a token.
-
-Messages are in English, or in Italian when your system language is Italian.
+A token opens your data without your password, so treat it like one. Every command and
+option is in the [command reference](docs/CLI.md).
 
 **AI agents learn it by themselves.** The app also installs a *skill*, the
 instructions an agent reads to use the command well, in the skill folders of
@@ -331,6 +308,11 @@ Codex, Cursor, Gemini CLI, GitHub Copilot and OpenCode. Then just ask:
 > mark the hero video as done.
 
 The skill and the command are links into the app, so they update with it.
+
+**Claude Desktop in chat mode** has no Terminal and does not read skill folders, so
+the app also registers a small MCP server in Claude Desktop's settings: it runs the
+same command and brings the skill with it. Reopen Claude Desktop after the first
+launch of LifeDash and ask away.
 
 ## Updates
 

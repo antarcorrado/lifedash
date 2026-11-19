@@ -45,6 +45,12 @@ merges what is on the Mac with what is on the server.
 
 Changes made on the Mac reach the phone within seconds, and the other way round.
 
+**Faster next time: a passkey.** In the web app, open **Account › Passkeys** and add one
+(it asks your password once). From then on, **Sign in with a passkey** lets you in with
+Face ID, Touch ID or your device PIN, with no password or code, and it opens your encrypted
+data too. It needs iOS 18, macOS 15, Android or a recent Chrome or Safari. Your password and
+recovery kit keep working.
+
 ## 4. The recovery kit
 
 At the end of sign-up you get a **recovery kit**: a text file to download, copy or
@@ -68,6 +74,11 @@ in a drawer, an encrypted drive.
 | Password **and** recovery kit | Your data cannot be opened any more, by anyone, not even the server administrator. This is the price of end-to-end encryption. A Mac that is still linked keeps working: from its Settings, **Download all data** saves a copy of everything. |
 
 ## Next steps
+
+- **Share a project**: open it in the editor, **Sharing**, type the other person's
+  username and press **Invite**. They accept from the top of their list; you both see
+  the same tasks, still end-to-end encrypted, while amounts and the project's place in
+  your list stay yours.
 
 - [README](../README.md): everything LifeDash does, Finance, the `lifedash` command
   and AI agents.

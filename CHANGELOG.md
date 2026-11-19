@@ -3,6 +3,130 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.41
+
+- Start typing a letter or a number anywhere in the list and the search opens with it.
+- When a search finds nothing, a «Create project» button opens a new project already named after the search.
+- The project editor points out when another project already has the same title, with a link to open it.
+- Search on the Mac is much quicker on long lists.
+- Claude Desktop can now use LifeDash in chat mode too: the app sets it up automatically.
+- A newly enabled agent loop starts in single-agent mode.
+
+## 1.4.40
+
+- Search waits for a one-second pause in typing, so it stays smooth on long lists, and only the tasks that contain the searched words open up.
+- Long descriptions end with «… Expand», and the «More…» button has its dots too.
+- Completed and cancelled tasks, including completed subtasks, sit behind «Completed…» and «Cancelled…» buttons in the same style as «More…», aligned with the other rows.
+- The loop icon shows one dot for single-agent and three dots in a triangle for subagents.
+
+## 1.4.39
+
+- Tasks to verify use their own seal-with-tick icon, in the «To verify» section, on its «verify all» button and on each row, so they no longer look like completed tasks.
+- Task rows are cleaner: no question mark appears when the state of a commit cannot be read.
+
+## 1.4.38
+
+- Tasks waiting for verification, and the «verify all» button of their section, now show a clear tick.
+
+## 1.4.37
+
+- Opening LifeDash from the menu bar is now instant: the window appears right away and refreshes its data only if something changed.
+- The first click on the window counts even when another app is in front: buttons, rows, fields and dragging the window all respond at once.
+- Search is lighter: the list filters after a brief pause in typing, and the search field sits on a blurred background that stays readable over the list.
+- A task whose open sub-tasks are all blocked now shows as blocked too, and goes back to normal as soon as one is unblocked.
+- The «To verify» section has a tick to verify all its tasks at once, on the Mac and on the web.
+
+## 1.4.36
+
+- «Restart to update» now does what it says: the app closes, the new version installs and LifeDash opens again by itself.
+- Settings are easier to read: the title reads «Settings» with your username in grey beside it, entries are grouped into sections with icons, and the window keeps a fixed height with scrolling, so opening a section no longer moves anything.
+- The «…» menu shows the app version in grey, with «Check for updates» and «Settings» right below it.
+- On the web, Settings gets the same sections and icons, and a cleaner gear icon.
+
+## 1.4.35
+
+- The update window now appears in front of the app even when it is set to stay always on top, so a new version can no longer hide behind it.
+- The buttons at the top right of the list sit on pure blur, with no tint: on a plain background nothing shows, and the blur appears only when text scrolls underneath.
+- In Settings, opening or closing a section no longer makes the content above jump and settle back.
+- On the web, the text under «Download all data» in Settings is fully readable.
+
+## 1.4.34
+
+- Updates are checked every time you open the app (if the last check was more than an hour ago) and then every hour, so a new version is found and downloaded in the background without opening the menu.
+- On the web, the settings button is now a gear and the test-notification button sits on the left.
+
+## 1.4.33
+
+- The end-of-loop notification on the web now names the project on every device, including a phone that unlocks with Face ID: the name stays encrypted and only your own browser can open it.
+- Search is easier to read: while you search, every category opens (completed ones included) and closes again as it was afterwards, and an empty search says «No results».
+- Empty project categories stay out of the way, and appear only while you drag a project.
+- Web search opens reliably when you tap the magnifying glass.
+
+## 1.4.32
+
+- Automatic updates now complete on their own: the new version is downloaded in the background and installed when you quit, so the next launch opens the updated app. «Restart to update» stays in the menu for those who want it right away.
+
+## 1.4.31
+
+- The web notification at the end of the agent loop can now name the project («The loop of LifeDash has finished»). The name travels encrypted and only your own browser can open it.
+
+## 1.4.30
+
+- Attachment thumbnails can be copied and dragged out: right-click gives «Copy image» (or «Copy file»), and dragging a thumbnail drops the file into Finder and other apps such as Claude.
+- Thumbnails keep the original proportions of the image, up to 21:9 wide or 9:21 tall, so the whole picture is easier to see.
+- The search field closes with a click outside when it is empty, blends into the page background, and highlights the searched words in titles and descriptions.
+- The icons at the top right of the list sit on a soft blur instead of a solid background, and the expand buttons are always available.
+- The task row stays cleaner: the last-modified date no longer appears on hover.
+
+## 1.4.29
+
+- Instant search in the list: the magnifying glass next to the other icons opens a field that filters projects and tasks as you type (titles, descriptions, notes and attachment names), with a small X to clear it.
+- The icons at the top right of the list now float in place like the + button while the list scrolls.
+- Task and project titles show their tooltip only when they are cut off.
+
+## 1.4.28
+
+- The deploy mode chip «Solo locale» is now simply «Locale», and the project editor widens to fit its longest row of chips.
+- The app now also installs the agent loop's slash commands (`/fix`, `/feature`, `/run-agent`…) and keeps them up to date with every update.
+- In folders linked to a LifeDash project, agents track every piece of work as a LifeDash task on their own, keeping its status current.
+- The `lifedash` skill is clearer and more consistent: each command points to one place in the guide.
+
+## 1.4.27
+
+- The status chip is always visible on every open task, not only under the pointer.
+- «More» is now a button: pressing it shows the other tasks at the same level as the rest of the list, and it comes back when the project is collapsed again.
+
+## 1.4.26
+
+- The agent loop's FTP mode is now called Publish online, and also covers projects with their own deploy; existing projects keep working as they are.
+- The deploy and execution tooltips are narrower and clearer, and the chips are in a new order.
+- A task's icon always takes the colour of its status, like the status chip.
+- On the web, PowerPoint, Word and Excel files without an embedded image get a drawn preview, and passkey sign-in tells the Face ID unlock key apart.
+
+## 1.4.25
+
+- The project editor can pick the agent loop's FTP site from a menu, and add or edit sites right there; site profiles stay on this Mac and never reach the server.
+- New `lifedash site` and `lifedash tools` commands manage the site profiles and the programs the deploy uses on this computer.
+- The agent loop status uses the loop arrows, and the deploy and execution tooltips appear instantly.
+
+## 1.4.24
+
+- The agent loop status is a menu in the project editor, and the deploy and execution modes explain themselves in a tooltip.
+- Every project with an agent loop shows its arrows in the list, coloured by the loop status.
+- On the web the agent loop fields sit one below the other.
+- The `lifedash` skill now covers FTP deploy and ZIP export of the agent loop on its own, configured per project.
+
+## 1.4.23
+
+- The Agent loop section of the project editor lines up with the other fields, with labels on the left.
+- The project list marks agent loops with their arrows, next to the status.
+
+## 1.4.22
+
+- The project editor has a Loop chip: status, deploy mode, execution mode and current task of the agent loop, with icons. On the Mac and on the web.
+- In the project list the loop status shows with its icon, only while the loop is doing something.
+- The `lifedash` skill now includes the whole agent loop: setup, commands and protocol in one place.
+
 ## 1.4.21
 
 - Skill: each project now links to LifeDash through a small project file.
