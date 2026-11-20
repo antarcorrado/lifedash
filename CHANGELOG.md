@@ -3,6 +3,11 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.43
+
+- Opening a category, a project or a task shows what's inside neatly collapsed.
+- In Finances, choosing a year shows a dot-and-line chart of the money collected month by month.
+
 ## 1.4.42
 
 - Search on the Mac stays smooth even with a single letter: the list filters right away, and rows open with their details from two letters on.
