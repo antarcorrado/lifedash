@@ -3,6 +3,11 @@
 The latest version comes first. Each section feeds the release notes shown by the
 in-app updater (`tools/release.sh` copies the `- ` lines into `appcast.xml`).
 
+## 1.4.44
+
+- The year chart in Finances shows every month between the first and last income, including quiet ones.
+- Hovering a point on the year chart enlarges it and shows the amount instantly.
+
 ## 1.4.43
 
 - Opening a category, a project or a task shows what's inside neatly collapsed.
